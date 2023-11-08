@@ -2,7 +2,7 @@ body{
     background-color: #B0A695;
 }
 
-.header{
+.header-class{
     background-color: #776B5D;
     border-bottom: 1px solid black;
 }
@@ -11,16 +11,124 @@ body{
     color: #F3EEEA;
 }
 
+.btn-navbar{
+    border: 0;
+}
+
 .img-services{
     background-color: #B0A695;
     border: 0.5px solid black;
+    overflow: hidden;
 }
 
+.card-img-top{
+    transition: 0.5s;
+    transform: scale(1);
+}
+
+.card-img-top:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+/* delete soon */
 .btn-contact{
     background-color: #b4a491;
     border: 1px solid black;
     color: black;
 }
+
+.btn-contact:hover{
+    background-color: #9d8f7f;
+}
+
+.services-btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+   }
+   
+   .services-btn.learn-more {
+    width: 12rem;
+    height: auto;
+   }
+   
+   .services-btn.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #9d8f7f;
+    border-radius: 1.625rem;
+   }
+   
+   .services-btn.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   .services-btn.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   .services-btn.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   .services-btn.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   .services-btn:hover .circle {
+    width: 100%;
+   }
+   
+   .services-btn:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   .services-btn:hover .button-text {
+    color: #fff;
+   }
 
 .about-section{
     background-color: #776B5D;
@@ -30,6 +138,20 @@ body{
     background-color: #776B5D;
     border: 1px solid black;
     color: #F3EEEA;
+}
+
+.about-div-img{
+    overflow: hidden;
+}
+
+.about-img{
+    transition: 0.5s;
+    transform: scale(1);
+}
+
+.about-img:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
 }
 
 .card-about-title{

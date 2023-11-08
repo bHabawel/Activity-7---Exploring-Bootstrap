@@ -8,26 +8,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header id="header" class="container-fluid">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top py-0">
-            <div class="header container-fluid">
-              <a class="header-text navbar-brand" href="#header">Hero Verse</a>
-              <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <header id="header" class="header-class container-fluid fixed-top">
+        <nav class="navbar navbar-expand-lg py-0">
+            <div class="container-fluid">
+              <a class="header-text navbar-brand fs-2" href="#header">Hero Verse</a>
+              <button class="btn-navbar navbar-toggler my-2 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                    <a class="header-text nav-link" href="#">Home</a>
+                    <a class="header-text nav-link fs-5" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="header-text nav-link" href="#services">Services</a>
+                    <a class="header-text nav-link fs-5" href="#services">Services</a>
                   </li>
                   <li class="nav-item">
-                    <a class="header-text nav-link" href="#about">About</a>
+                    <a class="header-text nav-link fs-5" href="#about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="header-text nav-link" href="#contact">Contact</a>
+                    <a class="header-text nav-link fs-5" href="#contact">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -36,7 +36,7 @@
     </header>
 
     <!-- HOME SECTION -->
-    <section>
+    <section class="pt-5">
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -83,7 +83,12 @@
                 <div class="card-body">
                 <h5 class="card-title">Web Development</h5>
                 <p class="card-text">Empower your presence with our web development solutions, designed to bring your digital vision to life and deliver a seamless user experience.</p>
-                <a href="#" class="btn-contact btn btn-primary">Contact Us</a>
+                <button class="services-btn learn-more">
+                  <span class="circle" aria-hidden="true">
+                  <span class="icon arrow"></span>
+                  </span>
+                  <span class="button-text">Contact Us</span>
+                </button>
                 </div>
             </div>
 
@@ -92,7 +97,12 @@
                 <div class="card-body">
                     <h5 class="card-title">Search Engine Optimization</h5>
                     <p class="card-text">Enhance your online visibility and drive more organic traffic to your website with our tailored search engine optimization strategies and solutions.</p>
-                    <a href="#" class="btn-contact btn btn-primary">Contact Us</a>
+                    <button class="services-btn learn-more">
+                      <span class="circle" aria-hidden="true">
+                      <span class="icon arrow"></span>
+                      </span>
+                      <span class="button-text">Learn More</span>
+                    </button>
                 </div>
             </div>
 
@@ -101,7 +111,12 @@
                 <div class="card-body">
                     <h5 class="card-title">Web Security</h5>
                     <p class="card-text">Safeguard your presence with our web security measures, ensuring that your website and data remain protected from potential threats and vulnerabilities.</p>
-                    <a href="#" class="btn-contact btn btn-primary">Contact Us</a>
+                    <button class="services-btn learn-more">
+                      <span class="circle" aria-hidden="true">
+                      <span class="icon arrow"></span>
+                      </span>
+                      <span class="button-text">Reach Out</span>
+                    </button>
                 </div>
             </div>
 
@@ -110,18 +125,23 @@
                 <div class="card-body">
                     <h5 class="card-title">Maintenance and Support</h5>
                     <p class="card-text">Ensure your presence remains secure, up-to-date, and fully functional, allowing you to focus on your core business activities with peace of mind.</p>
-                    <a href="#" class="btn-contact btn btn-primary">Contact Us</a>
+                    <button class="services-btn learn-more">
+                      <span class="circle" aria-hidden="true">
+                      <span class="icon arrow"></span>
+                      </span>
+                      <span class="button-text">Explore More</span>
+                    </button>
                 </div>
             </div>
         </section>
 
         <!-- ABOUT -->
         <section id="about" class="about-section container-fluid text-lg-center mt-4">
-            <h2 class="card-about-title card-title display-4 text-center">About</h2>
+            <h2 class="card-about-title card-title display-4 text-center mb-3 pt-2">About</h2>
             <div class="card-about card mb-3 h-100">
                 <div class="row g-0">
-                  <div class="col-lg-4 d-flex align-content-center">
-                    <img src="./images/about1.jpg" class="img-fluid rounded-start" alt="Company">
+                  <div class="about-div-img col-lg-4 d-flex align-content-center">
+                    <img src="./images/about1.jpg" class="about-img img-fluid rounded-start" alt="Company">
                   </div>
                   <div class="col-lg-8">
                     <div class="card-body">
@@ -136,8 +156,8 @@
 
               <div class="card-about card mb-3 h-100">
                 <div class="row g-0">
-                  <div class="col-lg-4 order-lg-2 d-flex align-content-center">
-                    <img src="./images/about22.jpg" class="img-fluid rounded-start" alt="People">
+                  <div class="about-div-img col-lg-4 order-lg-2 d-flex align-content-center">
+                    <img src="./images/about22.jpg" class="about-img img-fluid rounded-start" alt="People">
                   </div>
 
                   <div class="col-lg-8 order-lg-1">
@@ -155,13 +175,18 @@
         </section>
     </main>
 
+    <!-- FOOTER CONTACT -->
     <footer id="contact" class="container-fluid">
         <div class="row text-center ">
-            <p class="col-lg-2 h2">Hero Verse</p>
-            <p class="col-lg-4 h6 mb-0 pt-2">Address: Kayang Extension, Baguio City, 2600</p>
-            <p class="col-lg-2 h6 mb-0 pt-2">Phone: +63 995 614 7925</p>
-            <p class="col-lg-3 h6 mb-0 pt-2">Email: webtech@heroverse.com</p>
+            <p class="col-lg-12 h2">Hero Verse</p>
         </div>
+
+        <div class="row text-center">
+          <p class="col-lg-4 h6 mb-0 pt-2">Address: Kayang Extension, Baguio City, 2600</p>
+            <p class="col-lg-4 h6 mb-0 pt-2">Phone: +63 995 614 7925</p>
+            <p class="col-lg-4 h6 mb-0 pt-2">Email: webtech@heroverse.com</p>
+        </div>
+
         <div class="row mt-2 ">
             <p class="col-md-12 text-center ">© 2023 Hero Verse. All rights reserved.</p>
         </div>
