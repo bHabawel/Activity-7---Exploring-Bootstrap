@@ -1,0 +1,37 @@
+body{
+    background-color: #B0A695;
+}
+
+.header{
+    background-color: #776B5D;
+    border-bottom: 1px solid black;
+}
+
+.header-text{
+    color: #F3EEEA;
+}
+
+.img-services{
+    background-color: #B0A695;
+    border: 0.5px solid black;
+}
+
+.btn-contact{
+    background-color: #b4a491;
+    border: 1px solid black;
+    color: black;
+}
+
+.about-section{
+    background-color: #776B5D;
+}
+
+.card-about{
+    background-color: #776B5D;
+    border: 1px solid black;
+    color: #F3EEEA;
+}
+
+.card-about-title{
+    color: #F3EEEA;
+}
