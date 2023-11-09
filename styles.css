@@ -11,6 +11,10 @@ body{
     color: #F3EEEA;
 }
 
+.burger-icon{
+    color: white;
+}
+
 .btn-navbar{
     border: 0;
 }
@@ -28,7 +32,7 @@ body{
 
 .card-img-top:hover{
     transition: 0.5s;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 /* delete soon */
